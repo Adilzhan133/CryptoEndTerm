@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplayer Web3 Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Multiplayer Rock Paper Scissors – Web3</h1>
+</header>
+
+<div class="wallet-box">
+  <button id="connectBtn">Connect Wallet</button>
+  <p id="walletAddress">Not connected</p>
+</div>
+
+<div class="create-game">
+  <input id="opponentInput" placeholder="Enter opponent address">
+  <button id="createGameBtn">Create Game</button>
+</div>
+
+<div class="score-board">
+  <div id="player-label" class="badge">You</div>
+  <div id="opponent-label" class="badge">Opponent</div>
+  <span id="player-score">0</span>:<span id="opponent-score">0</span>
+</div>
+
+<div class="result">
+  <p>Select a pending game, then click your move.</p>
+</div>
+
+<h3>Pending Games</h3>
+<ul id="pendingGames"></ul>
+
+<h3>Game History</h3>
+<ul id="gameHistory"></ul>
+
+<div class="choices">
+  <div class="choice" id="r"><img src="images/rock.jpg" alt="Rock"></div>
+  <div class="choice" id="p"><img src="images/paper.jpg" alt="Paper"></div>
+  <div class="choice" id="s"><img src="images/scissors.jpg" alt="Scissors"></div>
+</div>
+
+<p id="action-msg">Click an image to submit your move for the selected game.</p>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

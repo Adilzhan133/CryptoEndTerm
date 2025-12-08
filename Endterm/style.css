@@ -1,0 +1,26 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#252734; color:white; text-align:center; padding:20px; }
+
+header h1 { color:#f0a500; margin-bottom:20px; }
+
+.wallet-box { margin-bottom:15px; }
+#createGameBtn, #connectBtn { padding:8px 20px; margin:5px; cursor:pointer; border:none; border-radius:8px; background:#f0a500; color:#000; transition:0.3s; }
+#createGameBtn:hover, #connectBtn:hover { background:#ffaa00; }
+
+.score-board { margin:15px auto; border:3px solid white; width:220px; padding:10px; font-size:30px; border-radius:12px; position:relative; }
+.badge { background:#E2584D; padding:2px 10px; position:absolute; font-size:14px; }
+#player-label { left:-30px; top:10px; }
+#opponent-label { right:-40px; top:10px; }
+
+.result, #action-msg { margin:10px 0; font-size:18px; }
+
+.choices { display:flex; justify-content:center; gap:20px; margin:15px 0; }
+.choice { border:3px solid white; border-radius:50%; padding:10px; transition:0.3s; cursor:pointer; }
+.choice:hover { transform:scale(1.1); background: rgba(255,255,255,0.1); }
+.choice img { width:80px; height:80px; border-radius:50%; }
+
+ul { list-style:none; width:90%; max-width:500px; margin:10px auto; text-align:left; }
+ul li { background: rgba(255,255,255,0.1); margin:5px 0; padding:10px; border-radius:8px; }
+
+button.submitMoveBtn { padding:4px 8px; margin-left:5px; cursor:pointer; border-radius:5px; border:none; background:#f0a500; color:#000; transition:0.2s;}
+button.submitMoveBtn:hover { background:#ffaa00; }
