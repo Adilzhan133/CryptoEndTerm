@@ -1,0 +1,19 @@
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.nft-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nft-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
